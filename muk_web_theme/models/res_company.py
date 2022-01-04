@@ -66,7 +66,7 @@ class ResCompany(models.Model):
             ('large', 'Large')
         ], 
         string='Sidebar Type',
-        default='large'
+        default='invisible'
     )
     
     default_chatter_preference = fields.Selection(
@@ -75,5 +75,5 @@ class ResCompany(models.Model):
             ('sided', 'Sided'),
         ], 
         string='Chatter Position', 
-        default='sided'
+        default='normal'
     )
